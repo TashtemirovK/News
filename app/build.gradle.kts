@@ -1,18 +1,18 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-kapt")
+//    id("kotlin-kapt")
 //    id("com.google.dagger.hilt.android")
 }
 
 android {
     namespace = "kadyr.news"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "kadyr.news"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -37,7 +37,6 @@ android {
     }
     buildFeatures {
         viewBinding = true
-        dataBinding = true
     }
 }
 
