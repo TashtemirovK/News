@@ -55,7 +55,7 @@ dependencies {
     implementation (project(":common:common_utils"))
 
     // Lottie Animations
-    implementation(libs.lottie)
+//    implementation(libs.lottie)
 //    // retrofit
 //    implementation(libs.retrofit)
 //    // gson converter
@@ -82,7 +82,7 @@ dependencies {
 
 
 //    // Room
-    kapt (libs.androidx.room.compiler)
+//    kapt (libs.androidx.room.compiler)
 //    implementation(libs.androidx.room.ktx)
 //    // CircularProgressBar
 //    implementation(libs.androidx.swiperefreshlayout)

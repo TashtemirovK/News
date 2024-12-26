@@ -21,16 +21,13 @@ dependencyResolutionManagement {
 
 rootProject.name = "News"
 include(":app")
-
 // News modules
 include(":news:news_data")
 include(":news:news_domain")
 include(":news:news_presentation")
-
 // Search modules
 include(":search:search_data")
 include(":search:search_domain")
 include(":search:search_presentation")
-
 // Common modules
 include(":common:common_utils")
