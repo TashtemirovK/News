@@ -50,7 +50,7 @@ dependencies {
 
     // Dagger Hilt
 // /   implementation(libs.dagger.hilt.android)
-//    implementation(libs.hilt.android.compiler)
+// /   implementation(libs.hilt.android.compiler)
 //    implementation(libs.androidx.hilt.compiler)
 //    implementation(libs.hilt.android)
 //    kapt(libs.hilt.compiler)
