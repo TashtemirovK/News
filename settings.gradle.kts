@@ -20,7 +20,6 @@ dependencyResolutionManagement {
     }
 }
 
-
 rootProject.name = "News"
 include(":app")
 include(":news:news_data")

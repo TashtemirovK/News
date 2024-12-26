@@ -54,7 +54,7 @@ dependencies {
     implementation (project(":common:common_utils"))
 
     // Lottie Animations
-//    implementation(libs.lottie)
+    implementation(libs.lottie)
 //    // retrofit
 //    implementation(libs.retrofit)
 //    // gson converter
