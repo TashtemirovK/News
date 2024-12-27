@@ -1,8 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-//    id("kotlin-kapt")
-//    id("com.google.dagger.hilt.android")
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -36,7 +36,8 @@ android {
 
 dependencies {
 
-    implementation(project(":news:news_domain"))
+//    implementation(project(":news:news_domain"))
+    implementation(project(":common:common_utils"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -44,6 +45,19 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+
+    // Основная библиотека Hilt
+    implementation(libs.hilt.android.v251)
+    kapt(libs.dagger.hilt.android.compiler)
+    kapt(libs.androidx.hilt.compiler.v100)
+
+    // Retrofit
+    implementation(libs.retrofit)
+    // Retrofit Gson Converter
+    implementation(libs.converter.gson)
+    // Retrofit OkHttp
+    implementation(libs.okhttp)
 
     // Dagger Hilt
 //    implementation(libs.dagger.hilt.android)

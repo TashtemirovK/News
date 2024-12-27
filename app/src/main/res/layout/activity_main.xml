@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:text="News Highlights"
-        android:textColor="@android:color/black"
+        android:textColor="@color/purple_500"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -1,8 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-//    id("kotlin-kapt")
-//    id("com.google.dagger.hilt.android")
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -43,18 +43,24 @@ android {
 dependencies {
 
 
-    implementation (project(":news:news_data"))
-    implementation (project(":news:news_domain"))
-    implementation (project(":news:news_presentation"))
+    implementation(project(":news:news_data"))
+    implementation(project(":news:news_domain"))
+    implementation(project(":news:news_presentation"))
 
-    implementation (project(":search:search_data"))
-    implementation (project(":search:search_domain"))
-    implementation (project(":search:search_presentation"))
+    implementation(project(":search:search_data"))
+    implementation(project(":search:search_domain"))
+    implementation(project(":search:search_presentation"))
 
-    implementation (project(":common:common_utils"))
+    implementation(project(":common:common_utils"))
 
     // Lottie Animations
     implementation(libs.lottie)
+    // lottie airbnb
+    implementation(libs.android.lottie)
+    // Основная библиотека Hilt
+    implementation(libs.hilt.android.v251)
+    kapt(libs.dagger.hilt.android.compiler)
+    kapt(libs.androidx.hilt.compiler.v100)
 //    // retrofit
 //    implementation(libs.retrofit)
 //    // gson converter
@@ -85,8 +91,7 @@ dependencies {
 //    implementation(libs.androidx.room.ktx)
 //    // CircularProgressBar
 //    implementation(libs.androidx.swiperefreshlayout)
-//    // lottie airbnb
-//    implementation(libs.android.lottie)
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
