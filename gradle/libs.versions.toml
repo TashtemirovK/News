@@ -1,14 +1,19 @@
 [versions]
 activityKtx = "1.9.3"
+activityKtxVersion = "1.8.0"
 agp = "8.6.1"
 compiler = "4.0.0-RC1"
+compilerVersion = "4.15.1"
 coreKtxVersion = "1.15.0"
 glide = "4.16.0"
+glideVersion = "4.15.1"
+gradle = "8.6.1"
 hiltAndroid = "2.51.1"
 hiltAndroidCompiler = "2.51"
 hiltAndroidVersion = "2.51"
 hiltCompiler = "1.2.0"
 hiltCompilerVersion = "1.0.0"
+jetbrainsKotlinxCoroutinesAndroid = "1.7.3"
 kotlin = "1.9.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -18,7 +23,10 @@ appcompat = "1.7.0"
 kotlinxCoroutinesAndroid = "1.8.0"
 kotlinxCoroutinesAndroidVersion = "1.8.0"
 kotlinxCoroutinesCore = "1.6.3"
+kotlinxCoroutinesCoreVersion = "1.7.3"
 library = "1.0.0"
+lifecycleRuntimeCompose = "2.8.7"
+lifecycleRuntimeKtx = "2.6.2"
 lifecycleViewmodelKtxVersion = "2.8.7"
 lottie = "3.4.0"
 material = "1.12.0"
@@ -36,11 +44,14 @@ activity = "1.9.3"
 [libraries]
 android-lottie = { module = "com.airbnb.android:lottie" }
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
+androidx-activity-ktx-v180 = { module = "androidx.activity:activity-ktx", version.ref = "activityKtxVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-core-ktx-v190 = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
 androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltCompiler" }
 androidx-hilt-compiler-v100 = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltCompilerVersion" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycleRuntimeCompose" }
 androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleViewmodelKtxVersion" }
+androidx-lifecycle-runtime-ktx-v262 = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-lifecycle-viewmodel-ktx-v240 = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtxVersion" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomCompiler" }
@@ -51,6 +62,9 @@ converter-scalars = { module = "com.squareup.retrofit2:converter-scalars", versi
 dagger-hilt-android = { module = "com.google.dagger:hilt-android" }
 dagger-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide-compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compilerVersion" }
+glide-v4151 = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler" }
 hilt-android-v251 = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidVersion" }
@@ -61,7 +75,9 @@ androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-co
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
 kotlinx-coroutines-android-v163 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroidVersion" }
+kotlinx-coroutines-android-v173 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "jetbrainsKotlinxCoroutinesAndroid" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+kotlinx-coroutines-core-v173 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCoreVersion" }
 library = { module = "com.example:library", version.ref = "library" }
 lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }

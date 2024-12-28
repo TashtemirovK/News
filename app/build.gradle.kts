@@ -61,6 +61,10 @@ dependencies {
     implementation(libs.hilt.android.v251)
     kapt(libs.dagger.hilt.android.compiler)
     kapt(libs.androidx.hilt.compiler.v100)
+
+    // swiperefresh
+    implementation(libs.androidx.swiperefreshlayout)
+
 //    // retrofit
 //    implementation(libs.retrofit)
 //    // gson converter

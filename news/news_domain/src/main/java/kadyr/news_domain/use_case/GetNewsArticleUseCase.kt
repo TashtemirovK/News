@@ -5,6 +5,7 @@ import kadyr.news_domain.model.Article
 import kadyr.news_domain.repository.NewsRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import javax.inject.Inject
 
 class GetNewsArticleUseCase(private val newsRepository: NewsRepository) {
 
