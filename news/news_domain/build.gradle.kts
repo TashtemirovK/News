@@ -36,7 +36,7 @@ android {
 
 dependencies {
 
-//    implementation(project(":news:news_data"))
+    implementation(project(":common:common_utils"))
 
     // Корутин для бизнес-логики
 //    implementation(libs.kotlinx.coroutines.core)

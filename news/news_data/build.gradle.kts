@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "kadyr.news_data"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
@@ -36,7 +36,7 @@ android {
 
 dependencies {
 
-//    implementation(project(":news:news_domain"))
+    implementation(project(":news:news_domain"))
     implementation(project(":common:common_utils"))
 
     implementation(libs.androidx.core.ktx)
