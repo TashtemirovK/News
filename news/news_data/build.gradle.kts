@@ -59,25 +59,13 @@ dependencies {
     // Retrofit OkHttp
     implementation(libs.okhttp)
 
-    // Dagger Hilt
-//    implementation(libs.dagger.hilt.android)
-//    implementation(libs.hilt.android.compiler)
-//    implementation(libs.androidx.hilt.compiler)
-//    implementation(libs.hilt.android)
-//    kapt(libs.hilt.compiler)
-//    implementation(libs.dagger.hilt.android)
-//    implementation(libs.hilt.android.compiler)
-//    implementation(libs.androidx.hilt.compiler)
-//    // Hilt
-//    implementation(libs.hilt.android)
-//    kapt(libs.hilt.compiler)
-//
-//    implementation(libs.retrofit)
-//    implementation(libs.converter.gson)
-//    implementation(libs.okhttp)
-//    implementation(libs.androidx.room.ktx)
-//    kapt(libs.androidx.room.compiler)
-//    implementation(libs.kotlinx.coroutines.core)
+    // Room
+    implementation(libs.androidx.room.runtime)
+    // Компилятор аннотаций для Room
+    kapt(libs.androidx.room.compiler)
+    // Дополнительно: расширения для Kotlin
+    implementation(libs.androidx.room.ktx)
+
 //    // Lottie
 //    implementation(libs.lottie)
 }

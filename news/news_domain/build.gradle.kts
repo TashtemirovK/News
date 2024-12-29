@@ -46,6 +46,13 @@ dependencies {
     kapt(libs.dagger.hilt.android.compiler)
     kapt(libs.androidx.hilt.compiler.v100)
 
+    // Room
+    implementation(libs.androidx.room.runtime)
+    // Компилятор аннотаций для Room
+    kapt(libs.androidx.room.compiler)
+    // Дополнительно: расширения для Kotlin
+    implementation(libs.androidx.room.ktx)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

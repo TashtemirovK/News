@@ -6,6 +6,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import kadyr.news_data.network.NewsApiService
 import kadyr.news_data.repository.NewsRepoImpl
+import kadyr.news_data.room.NewsDAO
 import kadyr.news_domain.repository.NewsRepository
 import retrofit2.Retrofit
 
@@ -19,7 +20,7 @@ object NewsDataModule {
     }
 
     @Provides
-    fun provideNewsRepository(newsApiService: NewsApiService): NewsRepository {
-        return NewsRepoImpl(newsApiService)
+    fun provideNewsRepository(newsApiService: NewsApiService, newsDAO: NewsDAO): NewsRepository {
+        return NewsRepoImpl(newsApiService, newsDAO)
     }
 }

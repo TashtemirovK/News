@@ -55,47 +55,20 @@ dependencies {
 
     // Lottie Animations
     implementation(libs.lottie)
-    // lottie airbnb
-    implementation(libs.android.lottie)
-    // Основная библиотека Hilt
-    implementation(libs.hilt.android.v251)
+    implementation(libs.android.lottie) // lottie airbnb
+    implementation(libs.hilt.android.v251)  // Основная библиотека Hilt
     kapt(libs.dagger.hilt.android.compiler)
     kapt(libs.androidx.hilt.compiler.v100)
 
-    // swiperefresh
+    // Swiperefresh
     implementation(libs.androidx.swiperefreshlayout)
 
-//    // retrofit
-//    implementation(libs.retrofit)
-//    // gson converter
-//    implementation(libs.converter.gson)
-//    implementation(libs.converter.scalars)
-//    // OkHttp
-//    implementation(libs.okhttp)
-//    // Coroutines
-//    implementation(libs.kotlinx.coroutines.core)
-//    implementation(libs.kotlinx.coroutines.android.v163)
-//    implementation(libs.androidx.lifecycle.viewmodel.ktx.v240)
-//    implementation(libs.androidx.lifecycle.runtime.ktx)
-//    // Glide
-//    implementation(libs.glide)
-//    implementation(libs.compiler)
-//    // ViewModel Delegate
-//    implementation(libs.androidx.activity.ktx)
-//    // Dagger Hilt
-//    implementation(libs.dagger.hilt.android)
-//    implementation(libs.hilt.android.compiler)
-//    implementation(libs.androidx.hilt.compiler)
-//    kapt(libs.hilt.compiler)
-//    implementation(libs.hilt.android)
-
-
-//    // Room
-//    kapt (libs.androidx.room.compiler)
-//    implementation(libs.androidx.room.ktx)
-//    // CircularProgressBar
-//    implementation(libs.androidx.swiperefreshlayout)
-
+    // Room
+    implementation(libs.androidx.room.runtime)
+    // Компилятор аннотаций для Room
+    kapt(libs.androidx.room.compiler)
+    // Дополнительно: расширения для Kotlin
+    implementation(libs.androidx.room.ktx)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
