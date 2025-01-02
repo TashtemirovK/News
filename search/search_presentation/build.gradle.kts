@@ -32,12 +32,16 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
 
-//    implementation(project(":search:search_presentation"))
-//    implementation(project(":news:news_presentation"))
     implementation(project(":common:common_utils"))
     implementation(project(":search:search_domain"))
 
