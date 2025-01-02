@@ -9,13 +9,18 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
+import kadyr.common_utils.Activities
 import kadyr.common_utils.Navigator
 import kadyr.news_presentation.databinding.ActivityNewsBinding
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.isActive
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class NewsActivity : AppCompatActivity() {
+
+    @Inject
+    lateinit var provider: Navigator.Provider
 
     companion object {
         fun launchActivity(activity: Activity) {
@@ -44,6 +49,9 @@ class NewsActivity : AppCompatActivity() {
 
     private fun initView() {
         binding.rvArticles.adapter = newsAdapter
+        binding.ivGoToSearch.setOnClickListener {
+            provider.getActivities(Activities.SearchActivity)
+        }
     }
 
     private fun setObservers() {

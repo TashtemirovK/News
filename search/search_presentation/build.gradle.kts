@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -37,6 +39,7 @@ dependencies {
 //    implementation(project(":search:search_presentation"))
 //    implementation(project(":news:news_presentation"))
     implementation(project(":common:common_utils"))
+    implementation(project(":search:search_domain"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -46,4 +49,22 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Основная библиотека Hilt
+    implementation(libs.hilt.android.v251)
+    kapt(libs.dagger.hilt.android.compiler)
+    kapt(libs.androidx.hilt.compiler.v100)
+
+    // Сoroutines
+    implementation(libs.kotlinx.coroutines.core.v173) // Core
+    implementation(libs.kotlinx.coroutines.android.v173) // Android
+    implementation(libs.androidx.lifecycle.runtime.ktx.v262) // LifecycleScope
+    implementation(libs.androidx.lifecycle.runtime.compose) // Для Compose
+
+    // Glide
+    implementation(libs.glide)
+    annotationProcessor(libs.glide.compiler)
+
+    // swiperefresh
+    implementation(libs.androidx.swiperefreshlayout)
 }
