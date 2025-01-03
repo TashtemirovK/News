@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
 import kadyr.search_domain.model.Article
-import kadyr.search_presentation.databinding.ViewHolderArticlesBinding
+import kadyr.search_presentation.databinding.ViewHolderSearchArticlesBinding
 
 class NewsAdapter : RecyclerView.Adapter<NewsAdapter.MyViewHolder>() {
 
@@ -18,12 +18,12 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.MyViewHolder>() {
         notifyItemInserted(this.list.lastIndex)
     }
 
-    inner class MyViewHolder(val viewDataBinding: ViewHolderArticlesBinding) :
+    inner class MyViewHolder(val viewDataBinding: ViewHolderSearchArticlesBinding) :
         RecyclerView.ViewHolder(viewDataBinding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val binding =
-            ViewHolderArticlesBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            ViewHolderSearchArticlesBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return MyViewHolder(binding)
     }
 
